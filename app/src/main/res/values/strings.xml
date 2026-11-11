@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAK Assist</string>
+    <string name="ptt_name">TAK Assist PTT</string>
+    <string name="app_desc">Chat with an on-device LLM (llama.cpp) that can read and annotate the ATAK map, and speak or type reports that become map markers. By ApexCSFC.</string>
+    <string name="credits">Map data © OpenStreetMap contributors (ODbL). Model server: llama.cpp (MIT). Models are licensed by their publishers.</string>
+</resources>

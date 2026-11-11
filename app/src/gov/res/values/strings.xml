@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_desc">Chat with an on-device LLM (llama.cpp) that can read and annotate the ATAK map, and speak or type reports that become map markers. By ApexCSFC.</string>
+</resources>

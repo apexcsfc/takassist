@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TAK Assist: one pane, two tabs (Chat, Talk), ApexCSFC logo along the bottom. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1F24"
+    android:orientation="vertical">
+
+    <!-- Tab bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tak_tab_chat"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Chat"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tak_tab_talk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Talk"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Online / offline mode. Tap to switch; offline keeps every lookup on the phone. -->
+        <TextView
+            android:id="@+id/tak_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:minWidth="96dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Underline under the selected tab -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#39414B" />
+
+    <!-- Chat and Talk views go in here; only the selected one is visible. -->
+    <FrameLayout
+        android:id="@+id/tak_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Footer: ApexCSFC logo, always visible below both tabs. -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#39414B" />
+
+    <ImageView
+        android:id="@+id/tak_logo"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#000000"
+        android:contentDescription="ApexCSFC"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/apexcsfc_logo" />
+</LinearLayout>

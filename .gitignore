@@ -1,0 +1,10 @@
+.DS_Store
+.gradle/
+.takdev/
+build/
+app/build/
+local.properties
+*.apk
+*.aab
+*.gguf
+*.takmap
